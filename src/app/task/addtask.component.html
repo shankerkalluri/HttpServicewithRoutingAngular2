@@ -1,0 +1,32 @@
+<br/>
+<h1>{{title}}</h1>
+<div class="row">
+
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<tbody>
+				<tr>
+					
+					<td><strong>DVD Image</strong></td>
+					<td><strong>DVD Name</strong></td>
+					<td><strong>DVD Price</strong></td>
+					<td><strong>DVD ReelaseDate</strong></td>
+					<td><strong>DVD Code</strong></td>
+					<td><strong>DVD Description</strong></td>
+				</tr>
+				
+				<tr *ngFor="#t of tasks">
+					<td><img [src]='t.imageUrl'
+				[style.width.px]='imgWidth'
+				[style.margin.px]='imgMargin'/></td>
+					
+					<td>{{t.dvdName}}</td>
+					<td>{{t.dvdPrice}}</td>
+					<td>{{t.dvdreleaseDate}}</td>
+					<td>{{t.dvdCode}}</td>
+					<td>{{t.dvddescription}}</td>
+				</tr>
+			</tbody>
+		</table>
+	
+	</div>

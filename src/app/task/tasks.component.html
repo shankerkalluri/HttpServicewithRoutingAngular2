@@ -1,0 +1,62 @@
+<div class="text-center">
+    
+	<div class="row">
+		<table class="table">
+			<tr>
+				<td><strong>Book Images</strong></td>
+				<td><strong>Book Name</strong></td>
+				<td><strong>Book Price</strong></td>
+				<td><strong>Book Releas Date</strong></td>
+				<td><strong>Book Code</strong></td>
+				<td><strong>Description</strong></td>
+			</tr>
+		
+			<tr *ngFor="#designer of designers">
+				<td><img [src]='designer.imageUrl'
+			[style.width.px]='imgWidth'
+			[style.margin.px]='imgMargin'/></td>
+				
+				<td>{{designer.DesignerBookName}}</td>
+				<td>{{designer.DesignerBooPrice}}</td>
+				<td>{{designer.DesignerBookreleaseDate}}</td>
+				<td>{{designer.DesignerBooCode}}</td>
+				<td>{{designer.DesignerBooKdescription}}</td>
+				
+			</tr>
+		</table>
+	</div>
+	
+</div>
+
+<div>
+    <button (click)="back()">Back</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

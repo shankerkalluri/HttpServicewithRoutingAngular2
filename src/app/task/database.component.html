@@ -1,0 +1,35 @@
+<br/>
+<h1>{{title}}</h1>
+<div class="row">
+
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<tbody>
+				<tr>
+                    <td><strong>Product Image</strong></td>
+					<td><strong>Product Name</strong></td>
+					<td><strong>Product Code</strong></td>
+					<td><strong>Product RelaseDate</strong></td>
+					<td><strong>Product Description</strong></td>
+                    <td><strong>Product Price</strong></td>
+                    <td><strong>Product starRating</strong></td>
+				</tr>
+				
+				<tr *ngFor="let t of tasks">
+					<td><img [src]='t.imageUrl'
+				    [style.width.px]='imgWidth'
+				    [style.margin.px]='imgMargin'/></td>
+					
+					<td>{{t.productName}}</td>
+					<td>{{t.productCode}}</td>
+					<td>{{t.releaseDate}}</td>
+					<td>{{t.description}}</td>
+                    <td>{{t.price}}</td>
+                    <td>{{t.starRating}}</td>
+					
+				</tr>
+			</tbody>
+		</table>
+	
+	</div>
+</div>    
